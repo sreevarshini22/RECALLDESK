@@ -1,11 +1,11 @@
-# RECALLDESK 🧠
+# RECALLDESK 
 ### *"Support that remembers what happened."*
 
 > **An outcome-driven AI Customer Support Agent with Hindsight Memory for HackwithHyderabad 3.0.**
 
 ---
 
-## 🌟 Executive Summary
+##  Executive Summary
 
 Traditional customer support bots suffer from **Context Amnesia**. Every time a customer reaches out, they are treated as a stranger, forced to repeat their setup, and given generic troubleshooting steps (e.g., *"Did you restart your router?"*) that have already failed repeatedly in their past cases.
 
@@ -18,7 +18,7 @@ Traditional customer support bots suffer from **Context Amnesia**. Every time a 
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
                        CUSTOMER INTERACTION
@@ -55,7 +55,7 @@ MEMORY RETRIEVAL & RANKING               ENVIRONMENT CHANGE DETECTOR
 
 ---
 
-## 🧠 The 5 Structured Memory Types
+##  The 5 Structured Memory Types
 
 RECALLDESK avoids dumping raw conversation chatter into memory. Instead, it extracts structured, high-signal knowledge:
 
@@ -69,7 +69,7 @@ RECALLDESK avoids dumping raw conversation chatter into memory. Instead, it extr
 
 ---
 
-## 🎭 The Core User Story (Interactive Demo)
+##  The Core User Story (Interactive Demo)
 
 1. **First Interaction (Baseline)**:
    - Customer **Rahul** (`rahul@example.com`) reports: *"My internet disconnects every evening around 8 PM."*
@@ -82,9 +82,9 @@ RECALLDESK avoids dumping raw conversation chatter into memory. Instead, it extr
 2. **Customer Returns (Hindsight in Action)**:
    - Rahul returns days later: *"My internet is disconnecting again."*
    - The agent retrieves previous history:
-     - 🚫 **Skips restarting the router** (marked as ineffective).
-     - ✅ **Prioritizes Wi-Fi channel inspection** (proven fix).
-     - 🎯 **Uses concise formatting**.
+     -  **Skips restarting the router** (marked as ineffective).
+     -  **Prioritizes Wi-Fi channel inspection** (proven fix).
+     -  **Uses concise formatting**.
 
 3. **Environment Change Introduced**:
    - Rahul mentions: *"Yesterday I upgraded my router to X300."*
@@ -100,7 +100,7 @@ RECALLDESK avoids dumping raw conversation chatter into memory. Instead, it extr
 
 ---
 
-## 🚀 Quickstart & Setup Guide
+##  Quickstart & Setup Guide
 
 ### Prerequisites
 - **Python**: 3.10+
@@ -141,7 +141,7 @@ npm run dev
 
 ---
 
-## ⚙️ Environment Variables (`.env`)
+##  Environment Variables (`.env`)
 
 Backend includes a default `.env` file that runs in **Zero-Config Demo Mode** with native hindsight reasoning without requiring any paid API keys.
 
@@ -165,7 +165,7 @@ RELEVANCE_THRESHOLD=0.35
 
 ---
 
-## 📊 Analytics: Without Hindsight vs. With Hindsight
+##  Analytics: Without Hindsight vs. With Hindsight
 
 | Metric | Without Hindsight | With RECALLDESK Hindsight | Impact / Improvement |
 |---|---|---|---|
@@ -178,7 +178,7 @@ RELEVANCE_THRESHOLD=0.35
 
 ---
 
-## 🏆 Hackathon Judging Criteria Mapping
+##  Hackathon Judging Criteria Mapping
 
 ### 1. Innovation (30%)
 - **Hindsight Memory Architecture**: Transforms standard LLM chatbots into stateful, experiential support engines.
@@ -207,7 +207,7 @@ RELEVANCE_THRESHOLD=0.35
 
 ---
 
-## 🎬 Hackathon Presentation & Demo Script
+##  Hackathon Presentation & Demo Script
 
 ```
 1. INTRO (0:00 - 0:30):
@@ -224,7 +224,7 @@ RELEVANCE_THRESHOLD=0.35
 
 4. ENVIRONMENT CHANGE (1:45 - 2:30):
    "Now Rahul says: 'Yesterday I upgraded my router to X300.'
-   Watch the Right Panel: ⚠️ ENVIRONMENT CHANGED banner lights up.
+   Watch the Right Panel:  ENVIRONMENT CHANGED banner lights up.
    Instead of naively applying the old Channel 11 fix, RECALLDESK recognizes X300's SmartConnect band steering architecture, runs diagnostic telemetry, and recommends the true fix: separating SSIDs and updating firmware v3.0.4."
 
 5. CONCLUSION & ROI (2:30 - 3:00):
@@ -233,7 +233,7 @@ RELEVANCE_THRESHOLD=0.35
 
 ---
 
-## 🛠️ Automated Test Suite
+##  Automated Test Suite
 
 Run the full verification suite anytime:
 ```bash
@@ -244,5 +244,5 @@ python test_e2e_flow.py
 
 ---
 
-## 🛡️ License
+##  License
 Built for **HackwithHyderabad 3.0**. Open-source under MIT License.
