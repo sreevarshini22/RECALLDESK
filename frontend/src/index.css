@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #171615;
+  --charcoal: #242220;
+  --surface: #2D2A27;
+  --surface-elevated: #35322F;
+  --copper: #C86B3C;
+  --copper-hover: #D47A4B;
+  --teal: #5FA7A0;
+  --ivory: #E9DFC8;
+  --sage: #8BA58A;
+  --amber: #D99A4E;
+  --coral: #C95F55;
+  --text-secondary: #B8B1A5;
+  --text-muted: #817A71;
+  --border: #3A3631;
+  --border-subtle: #2B2824;
+}
+
+@layer base {
+  body {
+    background-color: #171615;
+    color: #E9DFC8;
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #E9DFC8;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom Operations Console Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171615;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A3631;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C86B3C;
+}
+
+/* Operations Console Panels & Cards */
+.console-panel {
+  background-color: #242220;
+  border: 1px solid #3A3631;
+}
+
+.console-surface {
+  background-color: #2D2A27;
+  border: 1px solid #3A3631;
+}
+
+.console-surface-subtle {
+  background-color: #1F1E1C;
+  border: 1px solid #3A3631;
+}
+
+/* Button Design Tokens */
+.btn-primary {
+  background-color: #C86B3C;
+  color: #171615;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #D47A4B;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #3A3631;
+  color: #E9DFC8;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #2D2A27;
+  border-color: #4D4741;
+}
+
+/* Memory Thread Signature Visual Connections */
+.memory-thread-line {
+  position: relative;
+}
+
+.memory-thread-line::before {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  top: 1.5rem;
+  bottom: 0;
+  width: 1.5px;
+  background: linear-gradient(to bottom, #5FA7A0, #C86B3C);
+  opacity: 0.4;
+}
+
+.memory-thread-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  border: 1.5px solid #242220;
+}
